@@ -1,15 +1,10 @@
-import { Router, Request, Response } from 'express';
+import { Router } from 'express';
 
-interface IProps{
-  req: Request;
-  res: Response | any; 
-}
+import { CreateUserController } from './controllers/user/CreateUserController'
 
 const router = Router();
 
-router.get('/teste', ({req, res}: IProps) => {
-    return res.json({nome: "Leandro"});
-  });
+router.post('/users', new CreateUserController().handle)
 
 export { router };
 
