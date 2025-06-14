@@ -12,6 +12,9 @@
     "migrate:status": "prisma migrate status",
     "prisma:generate": "prisma generate --schema=./prisma/schema.prisma"
   },
+  "prisma": {
+    "schema": "./prisma/schema.prisma"
+  },
   "devDependencies": {
     "@types/bcryptjs": "^3.0.0",
     "@types/cors": "^2.8.18",
