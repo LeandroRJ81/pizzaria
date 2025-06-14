@@ -10,7 +10,7 @@
     "migrate:dev": "prisma migrate dev",
     "migrate:deploy": "prisma migrate deploy",
     "migrate:status": "prisma migrate status",
-    "prisma:generate": "prisma generate"
+    "prisma:generate": "prisma generate --schema=./prisma/schema.prisma"
   },
   "devDependencies": {
     "@types/bcryptjs": "^3.0.0",
