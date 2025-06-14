@@ -24,6 +24,6 @@ app.use((err, req, res, next) => {
         message: 'Internal Server Error'
     });
 });
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log('Server online!');
 });
